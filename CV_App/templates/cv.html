@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>CV Generator</title>
+</head>
+<body>
+    <h2>{{user_profile.name}}</h2>
+    
+    <hr>
+    <h5>Summary</h5>
+    {{user_profile.about_you}}
+    <hr>
+    <h5>Contact Informations</h5>
+    <ul>
+        <Li>
+            Email- {{user_profile.email}}
+        </li>
+        <li>
+            Phone Number - {{user_profile.phone}}
+        </li>
+    </ul>
+    <h5>Education</h5>
+    <ul>
+        <li>{{user_profile.school}}</li>
+        <li>{{user_profile.degree}} from {{user_profile.univercity}}</li>
+    </ul>
+    <h5>Skills</h5>
+        {{user_profile.skill}}
+
+    <br><br>
+    <h5>Previous works</h5>
+    {{user_profile.Previous_works}}
+</body>
+</html>
